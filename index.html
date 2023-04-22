@@ -1,0 +1,283 @@
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animationMaos.css" rel="stylesheet">
+    <link href="css/animationText.css" rel="stylesheet">
+    <link href="css/animationButton.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/do.ico" type="image/x-icon">
+    <title>Portifólio</title>
+</head>
+<body>
+   <header>
+
+    <!-- partial:index.partial.html -->
+<div class="loading">
+    <div class="finger finger-1">
+      <div class="finger-item">
+        <span></span><i></i>
+      </div>
+    </div>
+                <div class="finger finger-2">
+      <div class="finger-item">
+        <span></span><i></i>
+      </div>
+    </div>
+                <div class="finger finger-3">
+      <div class="finger-item">
+        <span></span><i></i>
+      </div>
+    </div>
+                <div class="finger finger-4">
+      <div class="finger-item">
+        <span></span><i></i>
+      </div>
+    </div>
+                <div class="last-finger">
+      <div class="last-finger-item"><i></i></div>
+    </div>
+          </div>
+          
+    <h1>Portifólio</h1>
+    
+    <div id="menuHamurguer" > 
+      <img id="imgmenu" onclick="trocar()" onclick="clicarMenu()" alt="Bom dia!" class="img-bomdia" src="img/menup.png">
+        
+    </div>
+    <nav>
+        <ul id="menu1" class="menu menu1">
+            <li><a id="menu-services" href="#services">Meus Serviços</a></li>
+            <li><a href="#main">Contato</a></li>
+            <li><a href="Portifolio1/curriculo.html" target="_blank">Curriculo</a></li>
+            <li id="menu-plus" onclick="clicarMenu2()"><div id="port"><img src="img/setab.png" > Portifólio</div></li>
+                <ul id="menu2" class="menu menu2">
+                    <li><a href="#sites">Site</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#3d">Modelagem</a></li>
+                    <li><a href="#asp">Asp.Net</a></li>
+                </ul>
+                <span id="tema">Tema Claro</span>
+        </ul>
+       
+    </nav>
+    
+    
+   
+  </header>
+   
+   <main id="main">
+    
+    <div id="container-apresentation">
+    <section id="aprensentacionSection">
+      <p class="line typing-animation">Olá, Meu nome é </p>
+      <p class="line typing-animation2">Deividson, </p>
+      <p class="line typing-animation3">Eu gostaria de te apresentar </p>
+      <p class="line typing-animation4">Meu Portifólio! </p>
+      <p class="line typing-animation5">Eu gostaria de te apresentar </p>
+    </section>
+    <div id="img">
+        <iframe src="externals/card.html" frameborder="0"></iframe>
+  </div>
+    </div>
+    
+    <section id="contate">
+      <form action="https://formspree.io/f/xpznaben" method="post">
+        <input class="input" type="text" name="Nome" placeholder="Nome" required><br>
+        <input class="input" type="email" name="Email" placeholder="Email" required><br>
+        <input class="input" type="text" name="Assunto" placeholder="Assunto (Opcional)"><br>
+        <input id="checkbox"  type="checkbox" name="Aceita receber emails" placeholder=" aceito receber emails" required> Aceito receber emails
+        <div id="button">
+        <div class="Loader"><button type="submit" class="button">Enviar</button></div>
+      
+      </div>
+      </form>
+    </section>
+
+      <h3 id="services">Conheça</h2>
+      <h2 class="h1">Meus Serviços</h1>
+    <section id="section-services" class="container ">
+          
+    
+        <div class="textCenter">
+          <img src="img/www.ico"/>
+          <h4>Criação de Sites</h3>
+          <p class="subtitle">
+              Desenvolvo seu site inteiro<br />
+              do zero e te entrego prontinho
+          </p>
+        </div>
+        <div class="textCenter">
+          <img src="img/games.ico"/>
+          <h4>Criação de Jogos</h3>
+          <p class="subtitle">
+              Criação de jogos <br />
+              utilizando a Unity Engine
+          </p>
+        </div>
+        <div  class="textCenter">
+          <img id="luz" src="img/Csharp.png"/>
+          <h4>Back-End</h3>
+          <p class="subtitle">
+            Desenvolvimento Back-end<br>
+            C#
+          </p>
+        </div>
+      </div>
+    </section>
+  <section id="portifolio">
+    <div id="conheca">
+      <h3>Conheça</h2>
+      <h2 id="trabalhos">Meus trabalhos</h2>
+   
+    </div>
+
+    <h3 id="sites">Sites</h3>
+    <section class="imagens">
+      <div class="img-container">
+    <a href="" target="_blank"><embed class="embed" type="text/html" src="externals/zoom.html">
+    <p class="subtitle">Portifólio<br><span>Utilizando React e Sass</span></p></a>
+    </div>
+   
+    <div class="img-container">
+    <a href="" target="_blank"><embed class="embed" type="text/html" src="externals/netflix.html">
+    <p class="subtitle">Clone da Netflix <br><span>Utilizando API</span></p></a>
+  </div>
+</div>
+<div class="img-container">
+<a href="" target="_blank"><embed class="embed" type="text/html" src="externals/clima.html" >
+<p class="subtitle">Consulta do Clima <br><span>Utilizando API e React</span></p></a>
+</div>
+    </section>
+   
+    <section class="imagens">
+      <div class="img-container">
+        <a href="" target="_blank"><img src="img/boot.png" alt="Pokedex utilixando recursos de API"></a>
+        <p class="subtitle">Portifólio <br><span>Utilizando Bootstrap</span></p>
+      </div>
+      <div class="img-container">
+    <a href="" target="_blank"><img src="img/land.png" alt="Pagina Login Hbo"></a>
+    <p class="subtitle">Landing page</p>
+    </div>
+    <div class="img-container">
+    <a href="" target="_blank"><img src="img/verificacao.png" alt="Pokedex utilixando recursos de API"></a>
+    <p class="subtitle">Formulário de Verificação Js</p>
+    </section>
+    <section class="imagens">
+      <div class="img-container">
+    <a href="" target="_blank"><img src="externals/login.gif" alt="Pagina Login">
+    <p class="subtitle">Tela de Login<br></p></a>
+    </div>
+   
+    <div class="img-container">
+    <div class="compare">
+          <div class="compare__image">
+              <img src="externals/bater1.png">
+          </div>
+          
+          <div class="compare__image compare__overlay">
+              <img src="externals/bater3.png">
+          </div>
+      </div>
+      <a href="" target="_blank">
+    <p class="subtitle">Jogo de bateria<br><span>Html, Css e Js</span></p></a>
+  </div>
+</div>
+<div class="img-container">
+<a href="" target="_blank"><img src="img/Curriculo.png" alt="Pagina de atividades de Lógica de Programaçao"></a>
+<p class="subtitle">Curriculo <br></p>
+</div>
+    </section>
+    <section class="imagens" >
+      <div class="img-container" >
+    <a href="" target="_blank"><embed id="hbo" class="embed" type="text/html" src="externals/hbo.html" width="430" height="300">
+    <p class="subtitle">Login HBO</p></a>
+    </div>
+    <div class="img-container">
+    <a href="" target="_blank"><img src="img/pokedex.png" alt="Pokedex utilixando recursos de API"></a>
+    <p class="subtitle">Pokedex utilixando recursos de API</p>
+  </div>
+    <div class="img-container">
+    <a href="" target="_blank"><img src="img/atv30.png" alt="Pagina de atividades de Lógica de Programaçao"></a>
+    <p class="subtitle">Lógica de Programação</p>
+  </div>
+    </section>
+    <h3 id="asp">.Net</h3>
+    <section class="imagens">
+      <div class="img-container" id="fusca">
+        <iframe src="externals/contatos.html" ></iframe>
+      <p class="subtitle net-subtitle" >Agenda de Contatos<br><span>Utilizando MVC, Asp.Net</span></p>
+    </div>
+    <div class="img-container" id="fusca">
+      <iframe src="externals/api-vendas.html" ></iframe>
+    <p class="subtitle net-subtitle" >API de vendas<br><span>Utilizando Entiti Framework, C#</span></p>
+  </div>
+    
+</div>
+<div class="img-container">
+<a href="" target="_blank"><embed class="embed" type="text/html" src="externals/clima.html" >
+<p class="subtitle">Consulta do Clima <br><span>Utilizando API e React</span></p></a>
+</div>
+    </section>
+    <h3 id="games" >Jogos</h3>
+    <section class="imagens">
+      <div class="img-container">
+      <img src="img/jogos.png" alt="Jogos Unity">
+    <p class="subtitle">Flappy bird</p>
+  </div>
+    <div class="img-container">
+    <img src="img/byrd2.jpg" alt="Jogos Unity">
+    <p class="subtitle">flappy bird <br> <span>Mobile</span></p>
+  </div>
+    <div class="img-container">
+    <img src="img/hat.jpg" alt="Jogos Unity">
+    <p class="subtitle">Hat Back</p>
+  </div>
+    </section>
+    <h3 id="3d">Modelagem 3D</h3>
+    <section class="imagens">
+      <div class="img-container" id="fusca">
+      <iframe src="externals/fusca.html" frameborder="0"></iframe>
+    <p class="subtitle" id="fusca-subtitle">Fusca 3D</p>
+  </div>
+    <div class="img-container">
+    <img src="img/mesa.jpg" alt="Blender 3D">
+    <p class="subtitle">Mesa <br><span>Utilizando Blender 3D</span></p>
+  </div>
+    <div class="img-container">
+    <img src="img/prato.jpg" alt="Blender 3D">
+    <p class="subtitle">Prato 3D</p>
+  </div>
+    </section>  
+  </section>
+
+
+
+</main>
+  <footer>
+    <h6>Deividson Omédio</h6>
+    <ul>
+      <a href="https://www.linkedin.com/in/deividson-omedio-970b35195/"  target="_blank">
+        <img src="https://icons.iconarchive.com/icons/hopstarter/social-bookmark/16/Linked-In-icon.png" width="16" height="16">
+        <li>Linkedin</li>
+      </a>  
+      <a href="https://github.com/DeividsonOmedio" target="_blank">
+        <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/16/github-icon.png" width="16" height="16">
+        <li>GitHub</li>
+      </a>
+      <a href="https://www.instagram.com/deividsonomedio/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" width="16" height="16" alt="">
+        <li> Instagram</li>
+      </a>
+    </ul>
+  </footer>
+  <script src="js/index.js" type="text/javascript" defer></script>
+  <script src="js/zoom.js"></script>
+  <script src="js/slid.js"></script>
+</body>
+
+</html>

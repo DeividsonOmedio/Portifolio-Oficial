@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .carrossel{
+            box-shadow: 2px 2px 4px black;
+            overflow: hidden;
+            height: 236px;
+            width: 226px;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            transition: transform 1.5s ease-in-out;
+            transform: translateX(0);
+        }
+        img{
+
+        object-fit: cover;
+        height: 236px;
+        width: 226px; 
+        }
+        #hb1{
+            object-position: 10px;
+        }
+        
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="carrossel">
+        <div class="container" id="img">
+           
+            <img src="hbo.png" alt="">
+            <img src="hbo2.png" alt="">
+            <img id="hb1" src="hbo1.png" alt="">
+            
+        </div>
+    </div>
+    <script>
+        const imgs = document.getElementById("img")
+        const img = document.querySelectorAll("#img img")
+
+        let idx = 0
+
+        function carrossel(){
+            idx++
+
+            if(idx > img.length -1){
+                idx=0
+            }
+
+            imgs.style.transform = `translateX(${-idx * 226}px)`
+        }
+        setInterval(carrossel, 2800)
+    </script>
+</body>
+</html>

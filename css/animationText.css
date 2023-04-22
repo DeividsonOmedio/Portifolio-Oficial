@@ -1,0 +1,132 @@
+
+.line {
+  border-right: 2px solid rgba(255, 255, 255, 0.0);
+  color: var(--color1);
+  font-family: "Special Elite", monospace;
+  font-size: .9em;
+  margin-left: 35%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.typing-animation {
+  z-index: 0;
+  animation: blinkCursor 800ms steps(40) 0s backwards,
+   blinkCursor 900ms steps(40) 2s backwards,
+   blinkCursor 900ms steps(40) 3s backwards,
+   blinkCursor 900ms steps(40) 4s backwards,
+   
+  
+    typing 2s steps(40) 2s normal both;
+}
+
+.typing-animation2 {
+  animation: blinkCursor2 900ms steps(60) 4.5s forwards,
+    typing 2s steps(30) 5s normal both;
+}
+
+.typing-animation3 {
+  
+animation: blinkCursor 900ms steps(40) 7s forwards ,
+    typing3 3s steps(40) 7.5s normal both;
+  
+}
+
+
+.typing-animation4 {
+  animation: blinkCursor4 900ms steps(40) 11s infinite,
+    typing 2s steps(40) 11.5s normal both;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9em;
+  }
+}
+@keyframes typing3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19em;
+    
+  }
+}
+
+@keyframes blinkCursor {
+  
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  10% {
+    border-right-color: rgba(255, 255, 255, 0.0);
+  }
+  20% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  30% {
+    border-right-color: rgba(255, 255, 255, 0.0);
+  }
+  40% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  50% {
+    border-right-color: rgba(255, 255, 255, 0.0);
+  }
+  60% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  70% {
+    border-right-color: rgba(255, 255, 255, 0.0);
+  }
+  80% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  90% {
+    border-right-color: rgba(255, 255, 255, 0.0);
+  }
+  100%{
+    border-right-color: rgba(255, 255, 255, 0.0);
+    border-right: none;
+  }
+}
+
+  @keyframes blinkCursor2 {
+    
+    0% {
+      border-right-color: rgba(255, 255, 255, 0.0);
+    
+    }
+    25% {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      border-right-color: transparent;
+    }
+   
+}
+@keyframes blinkCursor4 {
+  
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  90% {
+    border-right-color: transparent;
+  }
+  100%{
+    border-right-color: rgba(255, 255, 255, 0.0);
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+    
+  .line{
+    margin-left: 15%;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,63 @@
+#header {
+    background-color: #fbb485;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Hubballi', cursive;
+}
+@media screen and (min-width:0px) and (max-width:600px) {
+    #container {
+        display: block;
+    }
+
+   
+}
+
+
+
+#nameAndTitle {
+    background-color: white;
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+    #nameAndTitle h1, h2 {
+        margin: 0;
+    }
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+#contatic {
+    list-style-type: none;
+}
+
+    #contatic i {
+        width: 30px;
+        color: #fbb485;
+    }
+
+#container {
+    display: flex;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 20px;
+}
+
+#sidebar, #content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.card h3 {
+    font-family: 'Hubballi', cursive;
+}
+
+.card {
+    font-family: 'Montserrat';
+    border: 1px solid #e9e5e5;
+    border-radius: 15px;
+    padding: 20px;
+    border-top-left-radius: 25px;
+}

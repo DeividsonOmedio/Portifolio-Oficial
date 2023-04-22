@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#box{
+    box-shadow: 3px 3px 3px black;
+    overflow: hidden;
+    height: 10%;
+    width: 250px;
+    background-color: black;
+}
+img{
+   transform-origin: center center;
+   object-fit: cover;
+   height: 110%; 
+   width: 100%;
+}
+    </style>
+</head>
+<body>
+   
+        <div id="box">
+           
+            <img src="Sass.png" alt="">
+      
+        </div>
+
+        
+
+    <script>const box = document.getElementById("box")
+        const img = document.querySelector("img")
+        
+        box.addEventListener("mousemove", (e) =>{
+            const x = e.clientX - e.target.offsetLeft
+            const y = e.clientY - e.target.offsetTop
+        
+            console.log(x, y)
+        
+            img.style.transformOrigin = `${x}px ${y}px`
+            img.style.transform = "scale(1.7)"
+        })
+        
+        box.addEventListener("mouseleave", () =>{
+            img.style.transform = "scale(1)"
+            img.style.transformOrigin = "center center"
+        })</script>
+</body>
+</html>
